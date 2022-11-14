@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/styleCart.css" />
+    <link rel="stylesheet" href="style/reset.css" />
+    <link rel="stylesheet" href="themify-icons/themify-icons.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <header id="headerCart">
+        <div class="logo">
+            <img src="image/logo.png" alt="" />
+        </div>
+        <div class="inputBox">
+            <input type="text" name="cart" id="searchIp" placeholder="Search" />
+            <button>
+                <ti class="ti-search" onclick="Search()"></ti>
+            </button>
+        </div>
+        <div class="Cart">
+            <ti class="ti-shopping-cart"></ti>
+            <div class="InterfaceCart InterfaceCart-close">
+                <table>
+                    
+                </table>
+            </div>
+        </div>
+    </header>
+    <container id="containerCart">
+        <div class="support">
+            <div class="layout">
+                <div class="layoutGrid">
+                    <ti class="ti-layout-grid4 grid-close open" onclick="updateLayoutGrid(this)"></ti>
+                </div>
+                <div class="layoutFull">
+                    <ti class="ti-layout-width-full full-close" onclick="updateLayoutAll(this)"></ti>
+                </div>
+            </div>
+            <div class="filter close">
+                <div id="btnFilter">
+                    <span>Filter</span>
+                    <ti class="ti-filter"></ti>
+                </div>
+                <div class="InterfaceFilter InterfaceFilter--close">
+                    <div class="InterfaceFilter--body">
+                        <div class="Filter--price">
+                            <h3 class="title">Price$</h3>
+                            <div class="content">
+                                <div class="price--from">
+                                    <label for="">From</label>
+                                    <input type="text" name="" class="priceF" id="priceF" placeholder="Eg: 123" onkeyup="checkInputPrice(this)">
+                                </div>
+                                <div class="price--to">
+                                    <label for="">To</label>
+                                    <input type="text" name="" class="priceT" id="priceT" placeholder="Eg: 203" onkeyup="checkInputPrice(this)">
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="Filter--typeProduct">
+                            <h3 class="title">Type Product</h3>
+                            <div class="content">
+                                <div class="typeOne">
+                                    <span class="typeProduct typeProduct-now" onclick="chooseType(this)">Cake</span>
+                                    <span class="typeProduct typeProduct-now" onclick="chooseType(this)">Candy</span>
+                                    <span class="typeProduct typeProduct-now" onclick="chooseType(this)">Bread</span>
+                                </div>
+                                <div class="typeTwo">
+                                    <span class="typeProduct typeProduct-now" onclick="chooseType(this)">Croissants</span>
+                                    <span class="typeProduct typeProduct-now" onclick="chooseType(this)">Cookie</span>
+                                    <span class="typeProduct typeProduct-now" onclick="chooseType(this)">Lollipop</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btnFilter">
+                        <button>FILTER</button>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="sortBy">
+                <span class="title">Sort By</span>
+                <span class="selected" onclick="openOption()">
+                    <span id="newOption">Default</span>
+                    <ti class="ti-angle-down"></ti>
+                </span>
+                <ul class="option option-close">
+                    <li>Default</li>
+                    <li>Low To Hight</li>
+                    <li>Hight To Low</li>
+                </ul>
+            </div> -->
+        </div>
+        <div class="listProduct" id="parentItem">
+            <!-- renderProduct -->
+        </div>
+        <div class="pageSales pageSales-open" id="pageSales">
+            <div class="btn-navigation">
+                <ti class="ti-arrow-left" onclick="clickSwitchPageLeft()"></ti>
+            </div>
+            <div class="numericalOrder" id="ParentNumericalOrder">
+                <!-- renderPageNumber -->
+            </div>
+            <div class="btn-navigation">
+                <ti class="ti-arrow-right" onclick="clickSwitchPageRight()"></ti>
+            </div>
+        </div>
+    </container>
+    <footer id="footerCart"></footer>
+</body>
+<script src="Js/Cart.js"></script>
+</html>

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="style/styleIndex.css">
+    <link rel="stylesheet" href="style/styleDynamic.css">
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="aos-master/dist/aos.css">
+</head>
+<body>
+    <header id="header">
+        <div class="logo">
+            <img src="image/logo.png" alt="">
+        </div>
+        <ul class="menubar">
+            <li><a href="http://127.0.0.1:5500/login.html">Home</a></li>
+            <li><a href="http://127.0.0.1:5500/cart.html">Shop</a></li>
+            <li><a href="">Page</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+        <div class="header__user--search--cart">
+            <div class="search">
+                <ti class="ti-search"></ti>
+            </div>
+            <div class="user">
+                <ti class="ti-user" onclick="openSubmenu()"></ti>
+                <ul id="user--login-signup" class="submenu--close">
+                    <li>
+                        <a href="http://127.0.0.1:5500/login.html">Login/ Sign Up</a>
+                    </li>
+                    <li>
+                        <a href="" onclick="logOut()">Logout</a>
+                    </li>
+                </ul>
+                <h5 id="nameUser"></h5>
+            </div>
+            <div class="cart">
+                <ti class="ti-shopping-cart"></ti>
+            </div>
+        </div>
+    </header>
+
+    <container id="container">
+        <div class="slideFirst" style="background-image: url(image/slide1.webp);">
+            <div class="paragragh">
+                <h1 class="colorMark show-when-sroll paragragh-close-100">Your Sweet</h1>
+                <h1 class="show-when-sroll paragragh-close-300">Pleasure...</h1>
+                <h4 class="show-when-sroll paragragh-close-200">Whether for its signature fruit pasta, chestnuts, calissons or nougats, Hediard pays particular attention to the choice of products that make up its small sweets.</h4>
+            </div>
+            <div class="pictures">
+                <div class="picture-rowOne">
+                    <img src="image/slide1-row1.jpeg" alt="">
+                </div>
+                <div class="picture-rowTwo">
+                    <img src="image/slide1-row21.jpeg" alt="">
+                    <img src="image/slide1-row22.jpeg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="slideSecond">
+            <div class="picture">
+                <img src="image/slide2.jpeg" class="show-when-sroll picture-scale" alt="">
+            </div>
+            <div class="paragragh">
+                <h2 class="show-when-sroll paragragh-close-300">Bakery</h2>
+                <h1 class="show-when-sroll paragragh-close-rightToLeft">About Us</h1>
+                <h4 class="show-when-sroll paragragh-close-downToUp">When in New Paltz, don't miss a trip to The Bakery. Residents consider The Bakery, with its rustic outdoor cafe and beautiful gardens, to be the center of social life in New Paltz, a place to meet people, bump into old friends, or sit quietly and read the papers. Known since 1981 for great bagels, croissants, rolls, rugulah, danish and butter cookies, The Bakery includes a coffee bar and full lunch menu. Experience New Paltz! Visit The Bakery.</h4>
+            </div>
+        </div>
+        <div class="slideThree">
+            <div class="listProduct">
+                <div class="product">
+                    <div class="icon">
+                        <img src="image/candy.png" alt="">
+                    </div>
+                    <div class="name">
+                        <h3>
+                            Candies
+                        </h3>
+                    </div>
+                    <div class="paragrah">
+                        <p>
+                            Sample text. Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo sagittis suscipit ultrices.
+                        </p>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="icon">
+                        <img src="image/piece-of-cake.png" alt="">
+                    </div>
+                    <div class="name">
+                        <h3>
+                            Cake
+                        </h3>
+                    </div>
+                    <div class="paragrah">
+                        <p>
+                            Sample text. Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo sagittis suscipit ultrices.
+                        </p>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="icon">
+                        <img src="image/cookie.png" alt="">
+                    </div>
+                    <div class="name">
+                        <h3>
+                            Cookie
+                        </h3>
+                    </div>
+                    <div class="paragrah">
+                        <p>
+                            Sample text. Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo sagittis suscipit ultrices.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="listProduct">
+                <div class="product">
+                    <div class="icon">
+                        <img src="image/banh-mi.png" alt="">
+                    </div>
+                    <div class="name">
+                        <h3>
+                            Bread
+                        </h3>
+                    </div>
+                    <div class="paragrah">
+                        <p>
+                            Sample text. Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo sagittis suscipit ultrices.
+                        </p>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="icon">
+                        <img src="image/croissant.png" alt="">
+                    </div>
+                    <div class="name">
+                        <h3>
+                            Croissants
+                        </h3>
+                    </div>
+                    <div class="paragrah">
+                        <p>
+                            Sample text. Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo sagittis suscipit ultrices.
+                        </p>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="icon">
+                        <img src="image/lollipop.png" alt="">
+                    </div>
+                    <div class="name">
+                        <h3>
+                            Lollipop
+                        </h3>
+                    </div>
+                    <div class="paragrah">
+                        <p>
+                            Sample text. Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo sagittis suscipit ultrices.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="pictureIntroduce">
+                <div class="title">
+                    <h3 class="show-when-sroll picture-scale">
+                        LiFe is Sweet
+                    </h3>
+                    <h1 class="show-when-sroll paragragh-close-100-30">
+                        Out Pro
+                    </h1>
+                </div>
+                <div class="listPictures">
+                    <div class="picture-column column1">
+                        <img src="image/slide3-column11.jpeg" alt="">
+                        <img src="image/slide3-column12.jpeg" alt="">
+                    </div>
+                    <div class="picture-column column2">
+                        <img src="image/slide3-column21.jpeg" alt="">
+                        <img src="image/slide3-column22.jpeg" alt="">
+                        <img src="image/slide3-column23.jpeg" alt="">
+                    </div>
+                    <div class="picture-column column3">
+                        <img src="image/slide3.column31.jpeg" alt="">
+                        <img src="image/slide2.jpeg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slideFour" style="background-image: url(image/slide41.jpeg);">
+            <h1 class="show-when-sroll picture-scale">We are waiting <br> for you !</h1>
+        </div>
+    </container>
+
+    <footer id="footer">
+
+    </footer>
+</body>
+<script src="jS/main.js"></script>
+<script src="aos-master/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+</html>

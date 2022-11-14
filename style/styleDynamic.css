@@ -1,0 +1,96 @@
+#header .menubar li:hover{
+    background-color: transparent;
+    border-bottom: 2px solid #e8604c;
+}
+#header .menubar li:hover a{
+    font-family: sans-serif;
+}
+#header .search:hover, #header .user:hover, #header .cart:hover{
+    color: #e8604c;
+}
+#header .header__user--search--cart .user ul li:hover{
+    background-color: #e8604c;
+}
+#header .header__user--search--cart .user ul li:nth-child(1):hover{
+    border-radius: 5px 5px 0px 0px;
+}
+#header .header__user--search--cart .user ul li:nth-child(2):hover{
+    border-radius: 0px 0px 5px 5px;
+}
+.submenu--close{
+    display: none;
+}
+.submenu--close.open{
+    display: block;
+}
+/*  */
+#container .btn .ti-angle-left:hover, 
+#container .btn .ti-angle-right:hover{
+    background-color: black;
+}
+#container .secondSlide img:hover{
+    transform: scale(1.2);
+    border-radius: 10px;
+    transition: all 3s ease-in-out;
+}
+
+
+.paragragh-close-100{
+    transform: translateX(-100%);
+    transition: all 1s ease-in-out;
+}
+.paragragh-close-200{
+    transform: translateX(-200%);
+    transition: all 3s ease-in-out;
+}
+.paragragh-close-300{
+    transform: translateX(-300%);
+    transition: all 2s ease-in-out;
+}
+.paragragh-close-100.open{
+    transform: translateX(0);
+    transition: all 3s ease-in-out;
+}
+.paragragh-close-200.open{
+    transform: translateX(0);
+    transition: all 3s ease-in-out;
+}
+.paragragh-close-300.open{
+    transform: translateX(0);
+    transition: all 3s ease-in-out;
+}
+/*  */
+.picture-scale{
+    transform: scale(0);
+    transition: all 1s ease-in-out;
+}
+.picture-scale.open{
+    transform: scale(1);
+    transition: all 2s ease-in-out;
+}
+.paragragh-close-rightToLeft{
+    opacity: 0.8;
+    transform: translate(70px, -40px);
+    transition: all 1s ease-in-out;
+}
+.paragragh-close-rightToLeft.open{
+    opacity: 1;
+    transform: translate(0, -40px);
+    transition: all 3s ease-in-out;
+}
+.paragragh-close-downToUp{
+    transform: translateY(100px);
+    transition: all 1s ease-in-out;
+}
+.paragragh-close-downToUp.open{
+    transform: translateY(0);
+    transition: all 1.5s ease-in-out;
+}
+.paragragh-close-100-30{
+    transform: translate(-500px, -30px);
+    transition: all 1s ease-in-out;
+}
+.paragragh-close-100-30.open{
+    transform: translate(0px, -30px);
+    transition: all 2s ease-in-out;
+}

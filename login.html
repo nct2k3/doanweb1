@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="style/styleLogin.css">
+    <link rel="stylesheet" href="style/reset.css">
+    <title>Document</title>
+</head>
+<body style="background-image: url(image/backgroundSlide.png)">
+    <div id="formLogin">
+        <form action="" id="LoginF">
+            <h2 class="title">LOGIN</h2>
+            <div class="name">
+                <input type="text" name="name" id="inputName" onkeyup="myN()">
+                <label for="name" id="lableName">Username</label>
+            </div>
+            <div class="pass">
+                <input type="password" name="pass" id="inputPass" onkeyup="myP()">
+                <label for="pass" id="lablePass">Password</label>
+            </div>
+            <div class="mess">
+                <h5 id="contentMess">Tài khoản không tồn tại!</h5>
+            </div>
+            <div class="submit">
+                <a onclick="checkUserLogin()">SUBMIT</a>
+            </div>
+            <div class="linkSignup">
+                <span>Don't have an account?</span>
+                <span>Sign Up</span>
+            </div>
+        </form>
+        <!--  -->
+        <!--  -->
+    </div>
+    <div id="formSignup" class="formSignUp-close">
+        <form action="" id="SignUpF">
+            <h2 class="title">Sign Up</h2>
+            <div class="email">
+                <input type="email" name="email" id="inputEmail" onkeyup="myES()">
+                <label for="email" id="lableEmail">Email</label>
+            </div>
+            <div class="nameS">
+                <input type="text" name="name" id="inputNameS" onkeyup="myNS()">
+                <label for="name" id="lableNameS">Username</label>
+            </div>
+            <div class="passS">
+                <input type="password" name="pass" id="inputPassS" onkeyup="myPS()">
+                <label for="pass" id="lablePassS">Password</label>
+            </div>
+            <div class="mess">
+                <h5 id="contentMessS">
+                    <!--  -->
+                </h5>
+            </div>
+            <div class="submit" id="submitSign">
+                <a onclick="checkDataSignUp()">SUBMIT</a>
+            </div>
+            <div class="btn-back">
+                <ti class="ti-arrow-left"></ti>
+            </div>
+        </form>
+    </div>
+    <div id="SignUp-success" class="SignUp-close">
+        <div class="icon-smile">
+            <ti class="ti-face-smile"></ti>
+        </div>
+        <div class="content">
+            <span>Đăng kí thành công!</span>
+        </div>
+    </div>
+</body>
+<script src="jS/Login.js"></script>
+</html>

@@ -1,0 +1,288 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    position: relative;
+    width: 100vw;
+    max-width: 1500px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#formLogin{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s ease-in-out;
+}
+#formLogin form{
+    padding: 20px 40px;
+    background-color: rgb(23, 12, 12);
+    border-radius: 5px;
+    box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+#formLogin h2{
+    color: white;
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: rgb(23, 12, 12);
+}
+#formLogin .name,
+#formLogin .pass{
+    position: relative;
+    margin: 70px 30px;
+    background-color: rgb(23, 12, 12);
+}
+#formLogin label{
+    color: white;
+    position: absolute;
+    left: 0px;
+    top: 30px;
+    background-color: rgb(23, 12, 12);
+    font-size: 13px;
+    transition: all 0.2s ease-in-out;
+}
+#formLogin input{
+    background-color: rgb(23, 12, 12);
+    width: 250px;
+    height: 50px;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: white;
+    /* padding-left: 30px; */
+    font-size: 15px;
+}
+#formLogin input:focus{
+    padding-left: 10px;
+    transition: all 0.2s ease-in-out;
+}
+#formLogin input:focus~label{
+    position: absolute;
+    top: -10px;
+    left: 0px;
+    color: rgb(34, 140, 10);
+    font-size: 12px;
+    transition: all 0.2s ease-in-out;
+}
+#formLogin .mess{
+    width: 100%;
+    height: 10px;
+}
+#formLogin .mess h5{
+    text-align: center;
+    color: red;
+    display: none;
+}
+#formLogin .submit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    background-color: rgb(23, 12, 12);
+}
+#formLogin .submit a, 
+#formLogin .linkSignup span{
+    background-color: white;
+    color: rgb(23, 12, 12);
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out;
+}
+#formLogin .submit a:hover,
+#formLogin .linkSignup span:hover{
+    background-color: rgb(34, 140, 10);
+    transition: all 0.5s ease-in-out;
+}
+#formLogin .linkSignup{
+    margin: 20px;
+    background-color: rgb(23, 12, 12);
+}
+#formLogin .linkSignup span, 
+#formLogin .linkSignup a{
+    background-color: rgb(23, 12, 12);
+    color: white;
+    margin: 5px;
+}
+/*  */
+/*  */
+#formSignup{
+    position: absolute;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 30px;
+}
+#formSignup form{
+    position: relative;
+    padding: 20px 40px;
+    background-color: rgb(23, 12, 12);
+    border-radius: 5px;
+    box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+#formSignup h2{
+    color: white;
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: rgb(23, 12, 12);
+}
+#formSignup .nameS,
+#formSignup .passS,
+#formSignup .email{
+    position: relative;
+    margin: 70px 30px;
+    background-color: rgb(23, 12, 12);
+}
+#formSignup label{
+    color: white;
+    position: absolute;
+    left: 0px;
+    top: 30px;
+    background-color: rgb(23, 12, 12);
+    font-size: 13px;
+    transition: all 0.2s ease-in-out;
+}
+#formSignup input{
+    background-color: rgb(23, 12, 12);
+    width: 250px;
+    height: 50px;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: white;
+    /* padding-left: 30px; */
+    font-size: 15px;
+}
+#formSignup input:focus{
+    padding-left: 10px;
+    transition: all 0.2s ease-in-out;
+}
+#formSignup input:focus~label{
+    position: absolute;
+    top: -10px;
+    left: 0px;
+    color: rgb(34, 140, 10);
+    font-size: 12px;
+    transition: all 0.2s ease-in-out;
+}
+#formSignup .mess{
+    width: 100%;
+    height: 10px;
+    
+}
+#formSignup .mess h5{
+    text-align: center;
+    color: red;
+    display: none;
+}
+#formSignup .submit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    background-color: rgb(23, 12, 12);
+}
+#formSignup .submit a{
+    background-color: white;
+    color: rgb(23, 12, 12);
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out;
+}
+#formSignup .submit a:hover{
+    background-color: rgb(34, 140, 10);
+    transition: all 0.5s ease-in-out;
+}
+.ti-arrow-left{
+    color: white;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    font-size: 20px;
+    background-color: transparent;
+    cursor: pointer;
+}
+.ti-arrow-left:hover{
+    color: rgb(34, 140, 10);
+}
+
+/*  */
+.formLogin-close{
+    transform: scale(0);
+    transition: all 1s ease-in-out;
+}
+.formSignUp-close{
+    transform: translateX(-300%);
+    transition: all 1s ease-in-out;
+}
+.formSignUp-open{
+    transform: translateX(0);
+    transition: all 1s ease-in-out;
+}
+/*  */
+
+#SignUp-success{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0px;
+    background-color: white;
+    width: 450px;
+    height: 150px;
+    border-radius: 5px;
+    border: 2px solid rgb(63 117 132);
+    background: linear-gradient(rgb(125, 206, 125), rgb(10, 123, 10));
+}
+.SignUp-close{
+    transform: translateX(-300%);
+}
+.SignUp-open{
+    animation: Dynamic1 3s;
+    transition: all 3s ease-in-out;
+}
+@keyframes Dynamic1 {
+    0%{
+        transform: translateX(-300%);
+    }50%{
+        transform: translate(0);
+    }100%{
+        transform: translate(-300%);
+    }
+}
+#SignUp-success .icon-smile{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+#SignUp-success .content{
+    height: 100%;
+    width: 70%;
+    border-left: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#SignUp-success .ti-face-smile{
+    color: rgb(34, 140, 10);
+    font-size: 30px;
+    background-color: white;
+    border-radius: 15px;
+}
+#SignUp-success span{
+    font-family: sans-serif;
+    color: white;
+    text-align: center;
+    /* font-weight: bold; */
+}
