@@ -203,6 +203,80 @@ var listProduct = [
         type: "Candy",
         title: "candy candy candy candy candy candy"
     },
+    {
+        image:  "image/render17.jpg",
+        name:   "pretzels",
+        price:  100,
+        type: "Cookie",
+    },
+    {
+        image:  "image/render18.jpg",
+        name:   "nut crackers",
+        price:  100,
+        type: "Cookie",
+   },
+    {
+        image:  "image/render19.jpg",
+        name:   "jam biscuits",
+        price:  100,
+        type: "Cookie",
+    },
+    {
+        image:  "image/render20.jpg",
+        name:   "almond cookie",
+        price:  100,
+        type: "Cookie",
+    },
+    {
+        image:  "image/render21.jpeg",
+        name:   "Croissants tapioca pearls",
+        price:  100,
+        type: "Croissants",
+    },
+    {
+        image:  "image/render22.jpg",
+        name:   "Croissants ",
+        price:  90,
+        type: "Croissants",
+     },
+    {
+        image:  "image/render23.jpg",
+        name:   "Croissants core seed ",
+        price:  70,
+        type: "Croissants",
+     },
+    {
+        image:  "image/render24.jpg",
+        name:   "Chocolate Croissants  ",
+        price:  200,
+        type: "Croissants",
+    },
+    {
+        image:  "image/render25.jpg",
+        name:   "Christmas Lollipop  ",
+        price:  50,
+        type: "Lollipop",
+   },
+    {
+        image:  "image/render26.jpg",
+        name:   "Suger Lollipop  ",
+        price:  30,
+        type: "Lollipop",
+        
+    },
+    {
+        image:  "image/render27.jpg",
+        name:   "rainbow Lollipop  ",
+        price:  20,
+        type: "Lollipop",
+       },
+    {
+        image:  "image/render28.jpg",
+        name:   "Apple Lollipop  ",
+        price:  20,
+        type: "Lollipop",
+   },
+
 ];
 var listTmp = [];
 var pageNumber = 1, listBtn, btnAdds, typeName ='', pages, regExp = /[a-zA-Z]/g;
