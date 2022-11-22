@@ -1,0 +1,137 @@
+.menuBar__main{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 70px;
+    width: 100vw;
+    background-color: aliceblue;
+    z-index: 2;
+}
+.menuBar__main .menuBar__main--icon{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 50%;
+}
+.menuBar__main--icon ti{
+    font-size: 20px;
+}
+.menuBar__main .logo{
+    width: 50%;
+}
+.menuBar__main .logo img{
+    width: 100px;
+    height: 70px;
+    object-fit: cover;
+    margin-left: 100px;
+}
+
+.menuBar__sub{
+    position: fixed;
+    width: 300px;
+    height: 90vh;
+    top: 70px;
+    left: 0px;
+    padding: 0px 0px 20px 0px;
+    z-index: 1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.9;
+}
+.menuBar__sub ul{
+    list-style: none;
+}
+.menuBar__sub ul .link{
+    padding: 20px 20px 0px 20px;
+    width: 100%;
+    font-size: 17px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+.link h4{
+    display: inline-block;
+    cursor: pointer;
+}
+.menuBar__sub .link--sub li:nth-child(1){
+    padding: 10px;
+}
+.menuBar__sub .link--sub li:nth-child(2){
+    padding: 10px;
+}
+.menuBar__sub .link--sub li:nth-child(3){
+    padding: 10px;
+}
+ti:hover{
+    color: #e8604c;
+}
+.link:hover h4{
+    color: #e8604c;
+}
+.link--sub li:hover{
+    color: #e8604c;
+}
+.close{
+    display: none;
+}
+.close.open{
+    display: block;
+}
+.ti-arrow-left{
+    position: absolute;
+    margin: 30px;
+    bottom: 0px;
+    right: 0px;
+    font-size: 30px;
+}
+.closeLeft{
+    transform: translateX(-100%);
+    transition: all .3s ease-in-out;
+}
+.closeLeft.open{
+    transform: translateX(0);
+    transition: all .6s ease-in-out;
+}
+
+/* container */
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;
+    width: 100%;
+}
+.container .parentCart .nametable{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 60px 0px 30px 0px;
+}
+.container table, .container tr, .container td{
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+.container table{
+    width: 100%;
+    min-width: 700px;
+}
+.container table td{
+    padding: 10px;
+}
+.container table td:nth-child(1){
+    width: 10%;
+}
+.container table td:nth-child(2){
+    width: 40%;
+}
+.container table td:nth-child(3){
+    width: 25%;
+}
+.container table td:nth-child(4){
+    width: 25%;
+}   

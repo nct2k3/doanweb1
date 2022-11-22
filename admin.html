@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/admin.css">
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="themify-icons/themify-icons.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="menuBar__main">
+        <div class="logo">
+            <img src="image/logo.png" alt="">
+        </div>
+        <div class="menuBar__main--icon">
+            <div class="notification">
+                <ti class="ti-bell"></ti>
+            </div>
+            <div class="gmail">
+                <ti class="ti-email"></ti>
+            </div>
+            <div class="menuIcon">
+                <ti class="ti-menu" onclick="openMenu()"></ti>
+            </div>
+            <div class="user">
+                <ti class="ti-user"></ti>
+            </div>
+        </div>
+    </div>
+    <div class="menuBar__sub closeLeft" style="background-image: url(image/backgroundSlide.png);">
+        <ul class="links">
+            <li class="link">
+                <h4 onclick="openSubList(this)">PRODUCT MANAGEMENT</h4>
+                <ti onclick="openSubList(this)" class="ti-angle-down rotate"></ti>
+                <ul class="link--sub close">
+                    <li class="add">Add product
+                        <ti class="ti-cloud-up"></ti>
+                    </li>
+                    <li class="edit">Edit product
+                        <ti class="ti-wand"></ti>
+                    </li>
+                    <li class="remove">Remove product
+                        <ti class="ti-trash"></ti>
+                    </li>
+                </ul>
+            </li>
+            <li class="link">
+                <h4 onclick="openSubList(this)">USER MANAGEMENT</h4>
+                <ti onclick="openSubList(this)" class="ti-angle-down"></ti>
+                <ul class="link--sub close">
+                    <li class="listUser" onclick="uploadUserList()">User list
+                        <ti class="ti-notepad"></ti>
+                    </li>
+                    <li class="order">Order
+                        <ti class="ti-truck"></ti>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <ti class="ti-arrow-left" onclick="closeMenu()"></ti>
+    </div>
+    <div class="container">
+        <div class="parentCart">
+            <div class="nametable">
+                
+            </div>
+            <table>
+                <tr>
+                    td*
+                </tr>
+            </table>
+        </div>
+    </div>
+
+</body>
+<script src="jS/admin.js"></script>
+</html>

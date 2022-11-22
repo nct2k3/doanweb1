@@ -17,6 +17,9 @@
 #header .header__user--search--cart .user ul li:nth-child(2):hover{
     border-radius: 0px 0px 5px 5px;
 }
+#header .cart a:hover ti{
+    color: #e8604c;
+}
 .submenu--close{
     display: none;
 }

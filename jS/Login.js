@@ -115,20 +115,22 @@ function checkDataSignUp(){
     var PassSign = document.getElementById("inputPassS").value;
     var list = JSON.parse(localStorage.getItem("ListUser"));
     mark = 0;
-    for(var i = 0; i < list.length; i++){
-        console.log(list[i].email);
-        console.log(list[i].name);
-        if(EmailSign === list[i].email){
-            document.getElementById("inputEmail").value = '';
-            document.getElementById("contentMessS").style.display = "block";
-            document.getElementById("contentMessS").innerText = "Email đã được sử dụng"
-            mark = 1;
-        }
-        if(NameSign === list[i].name){
-            document.getElementById("inputNameS").value = '';
-            document.getElementById("contentMessS").style.display = "block";
-            document.getElementById("contentMessS").innerText = "Tên người dùng đã được sử dụng"
-            mark = 1;
+    if(list != null){
+        for(var i = 0; i < list.length; i++){
+            console.log(list[i].email);
+            console.log(list[i].name);
+            if(EmailSign === list[i].email){
+                document.getElementById("inputEmail").value = '';
+                document.getElementById("contentMessS").style.display = "block";
+                document.getElementById("contentMessS").innerText = "Email đã được sử dụng"
+                mark = 1;
+            }
+            if(NameSign === list[i].name){
+                document.getElementById("inputNameS").value = '';
+                document.getElementById("contentMessS").style.display = "block";
+                document.getElementById("contentMessS").innerText = "Tên người dùng đã được sử dụng"
+                mark = 1;
+            }
         }
     }
     if(mark == 1){
@@ -161,6 +163,10 @@ function checkUserLogin(){
     var NameLog = document.getElementById("inputName").value;
     var PassLog = document.getElementById("inputPass").value;
     ListUser = JSON.parse(localStorage.getItem("ListUser"));
+    if(ListUser == null){
+        document.getElementById("contentMess").style.display = "block";
+        return;
+    }
     if(regExp.test(NameLog) && NameLog.length >= 8 && PassLog.length >= 6){
         for(var i = 0; i < ListUser.length; i++){
             if(ListUser[i].name === NameLog && ListUser[i].pass === PassLog){

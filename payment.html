@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="style/payment.css">
+    <title>Document</title>
+</head>
+<body style="background-image: url(image/backgroundSlide.png);">
+    <header class="header" id="header">
+        <div class="logo">
+            <img src="image/logo.png" alt="" />
+        </div>
+        <h1>TRANG THANH TOÁN</h1>
+    </header>
+    <div class="listProductAdded">
+        <table id="table">
+            <tr>
+                <th>
+                    <h2>Chọn</h2>
+                </th>
+                <th>
+                    <h2>Ảnh</h2>
+                </th>
+                <th>
+                    <h2>Tên</h2>
+                </th>
+                <th>
+                    <h2>Giá</h2>
+                </th>
+                <th>
+                    <h2>Số Lượng</h2>
+                </th>
+                <th>
+                    <h2>Xóa</h2>
+                </th>
+            </tr>
+        </table>
+    </div>
+    <div class="productsSelected">
+        <h2>Tổng tiền phải thanh toán: <span id="totalPayment">0$</span></h2>
+        <button onclick="getConfirmation()">Mua</button>
+    </div>
+</body>
+<script src="jS/payment.js"></script>
+</html>

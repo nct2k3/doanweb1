@@ -76,13 +76,16 @@
 #header .header__user--search--cart .user ul{
     position: absolute;
     top: 60px;
+    width: 150px;
+    height: 70px;
     border-radius: 5px;
     background-color: white;
     transition: all 0.5s ease-in-out;
 }
 #header .header__user--search--cart .user ul li{
     list-style: none;
-    padding: 5px 20px;
+    height: 50%;
+    width: 100%;
 }
 /* #header .header__user--search--cart .user ul li:nth-child(1){
     margin-bottom: 5px;
@@ -92,12 +95,24 @@
     font-size: 15px;
     font-family: sans-serif;
     color: black;
+    width: 150px;
+    height: 100%;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+#header .header__user--search--cart .user ul li:last-child a{
+    padding-right: 80px;
 }
 #header .header__user--search--cart .cart{
     cursor: pointer;
     font-size: 20px;
     margin-right: 40px;
     transform: translateY(2px);
+}
+#header .cart a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
 }
 /*  */
 #container .slideFirst{

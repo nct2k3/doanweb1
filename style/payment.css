@@ -1,0 +1,120 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    background-color: aliceblue;
+    border-bottom: 1px solid rgb(126, 115, 115);
+    height: 70px;
+}
+.header .logo{
+    padding-left: 10px;
+    position: absolute;
+    left: 0px;
+}
+.header .logo img{
+    width: 100px;
+    height: 70px;
+    object-fit: cover;
+    background-color: aliceblue;
+}
+.header h1{
+    text-align: center;
+    margin: 10px;
+    text-shadow: -2px 4px 4px #2f232a;
+    
+}
+.listProductAdded{
+    margin-top: 100px;
+    padding: 50px;
+}
+.listProductAdded  #table{
+    width: 100%;
+}
+.listProductAdded #table .image{
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    margin: 10px;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+.listProductAdded #table, .listProductAdded #table th, .listProductAdded #table td{
+    border-collapse: collapse;
+    border: 2px solid rgb(136, 128, 128);
+}
+.listProductAdded #table th{
+    padding: 10px;
+}
+.listProductAdded #table tr td{
+    text-align: center;
+    padding: 10px;
+}
+.listProductAdded #table tr td:first-child{
+    width: 5%;
+}
+.listProductAdded #table tr td:first-child input{
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+}
+.listProductAdded #table tr td:nth-child(2){
+    width: 40%;
+}
+.listProductAdded #table tr td:nth-child(3){
+    width: 10%;
+}
+.listProductAdded #table tr td:nth-child(4){
+    width: 10%;
+}
+.listProductAdded #table tr td:nth-child(5){
+    width: 25%;
+}
+.listProductAdded #table tr td:nth-child(5) .amount{
+    margin: 0px 20px;
+    font-size: 18px;
+}
+.listProductAdded #table tr td:last-child{
+    width: 10%;
+}
+.ti-minus, .ti-plus, .ti-trash{
+    cursor: pointer;
+}
+.productsSelected{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 200px;
+}
+.productsSelected #totalPayment{
+    color: red;
+    font-weight: 10;
+}
+.productsSelected button{
+    width: 150px;
+    height: 50px;
+    padding: 10px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+}
+.productsSelected button:hover{
+    background-color: rgb(34, 33, 33);
+}

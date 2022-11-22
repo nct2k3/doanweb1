@@ -34,124 +34,174 @@ full.addEventListener("click", () => {
 // list product 
 var listProduct = [
     {
+        id: 1,
         image: "image/render1.jpeg",
         name: "Tranmisu",
         price: 300,
-        type: "Cake"
+        type: "Cake",
+        title: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable."
+        
     },
     {
+        id: 2,
         image: "image/render2.webp",
         name: "Cheese Cake",
         price: 260,
-        type: "Cake"
+        type: "Cake",
+        title: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable."
+        
     },
     {
+        id: 3,
         image: "image/render3.webp",
         name: "Milted Chocolate",
         price: 200,
-        type: "Cake"
+        type: "Cake",
+        title: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable."
+        
     },
     {
+        id: 4,
         image: "image/render4.jpeg",
         name: "Cake On White Tray",
         price: 109,
-        type: "Cake"
+        type: "Cake",
+        title: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable."
+        
     },
     {
+        id: 5,
         image: "image/render5.jpeg",
         name: "Blue Cupcakes",
         price: 110,
-        type: "Cake"
+        type: "Cake",
+        title: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable."
+        
     },
     {
+        id: 6,
         image: "image/render1.jpeg",
         name: "Tranmisu",
         price: 300,
-        type: "Cake"
+        type: "Cake",
+        title: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable."
+        
     },
     {
+        id: 7,
         image: "image/render2.webp",
         name: "Cheese Cake",
         price: 260,
-        type: "Cake"
+        type: "Cake",
+        title: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable."
+        
     },
     {
+        id: 8,
         image: "image/render6.webp",
         name: "Chocolate CupcakeS",
         price: 106,
-        type: "Cake"
+        type: "Cake",
+        title: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable."
+        
     },
     {
+        id: 9,
         image: "image/render7.jpeg",
         name: "Brown Cake",
         price: 190,
-        type: "Cake"
+        type: "Cake",
+        title: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable."
+        
     },
     {
+        id: 10,
         image: "image/render8.jpeg",
         name: "Ice Cream Dish",
         price: 103,
-        type: "Cake"
+        type: "Cake",
+        title: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable."
+        
     },
     {
+        id: 11,
         image:  "image/render9.webp",
         name:   "dinosaur egg candy",
         price:  80,
-        type: "Candy"
+        type: "Candy",
+        title: "candy candy candy candy candy candy"
     },
     {
+        id: 12,
         image:  "image/render10.jpeg",
         name:   "fruits candy",
         price:  100,
-        type: "Candy"
+        type: "Candy",
+        title: "candy candy candy candy candy candy"
     },
     {
+        id: 13,
         image:  "image/render11.webp",
         name:   "Heart Shaped Candy",
         price:  90,
-        type: "Candy"
+        type: "Candy",
+        title: "candy candy candy candy candy candy"
     },
     {
+        id: 14,
         image:  "image/render12.webp",
         name:   "organge candy",
         price:  50,
-        type: "Candy"
+        type: "Candy",
+        title: "candy candy candy candy candy candy"
     },
     {
+        id: 15,
         image:  "image/render13.webp",
         name:   "Pumpkin candy",
         price:  46,
-        type: "Candy"
+        type: "Candy",
+        title: "candy candy candy candy candy candy"
     },
     {
+        id: 16,
         image:  "image/render14.webp",
         name:   "socola candy",
         price:  30,
-        type: "Candy"
+        type: "Candy",
+        title: "candy candy candy candy candy candy"
     },
     {
+        id: 17,
         image:  "image/render15.jpeg",
         name:   "apple candy",
         price:  20,
-        type: "Candy"
+        type: "Candy",
+        title: "candy candy candy candy candy candy"
     },
     {
+        id: 18,
         image:  "image/render11.webp",
         name:   "Heart Shaped Candy",
         price:  90,
-        type: "Candy"
+        type: "Candy",
+        title: "candy candy candy candy candy candy"
     },
     {
+        id: 19,
         image:  "image/render12.webp",
         name:   "organge candy",
         price:  50,
-        type: "Candy"
+        type: "Candy",
+        title: "candy candy candy candy candy candy"
     },
     {
+        id: 20,
         image:  "image/render16.webp",
         name:   "soft candy",
         price:  10,
-        type: "Candy"
+        type: "Candy",
+        title: "candy candy candy candy candy candy"
     },
 ];
 var listTmp = [];
@@ -175,9 +225,16 @@ layoutFull.addEventListener("click", () => {
 })
 // search
 function Search(){
+    listTmp = [];
     var parentItem = document.getElementById("parentItem");
     parentItem.innerHTML = '';
     var dataSearch = document.getElementById("searchIp").value.trim().toLowerCase();
+    if(dataSearch == ''){
+        parentItem.innerHTML = `<h3 style="margin-top: 200px;">Không tìm thấy kết quả</h3>`
+        document.querySelector(".filter").classList.add("close")
+        document.getElementById("pageSales").classList.add("close");
+        return;
+    }
     for(var i = 0; i < listProduct.length; i++){
         if((listProduct[i].name.toLowerCase()).includes(dataSearch) == true
         || String(listProduct[i].price).includes(dataSearch) == true
@@ -193,8 +250,11 @@ function Search(){
     }
     if(parentItem.innerHTML == ''){
         parentItem.innerHTML = `<h3 style="margin-top: 200px;">Không tìm thấy kết quả</h3>`
+        document.querySelector(".filter").classList.add("close")
+        document.getElementById("pageSales").classList.add("close");
+        return;
     }
-    document.querySelector(".filter").classList.remove("close")
+    document.querySelector(".filter").classList.remove("close");
     document.getElementById("pageSales").classList.add("close");
 }
 // sort low-hight
@@ -299,10 +359,10 @@ function clickSwitchPageRight(){
 function renderProduct(image, name, price){
     let cartChild = document.createElement("div");
     cartChild.classList.add("productItem");
-    cartChild.innerHTML =   `<div class="imageProduct">
+    cartChild.innerHTML =   `<div class="imageProduct" onclick="focusInform(this)">
                                 <img src= ${image} alt="">
                             </div>
-                            <div class="InformProduct">
+                            <div class="InformProduct" onclick="focusInform(this)">
                                 <h4 class="name">${name}</h4>
                                 <span class="price">${price}$</span>
                              </div>
@@ -316,6 +376,24 @@ function renderProduct(image, name, price){
                             </div>`
     document.getElementById("parentItem").append(cartChild);
 }
+// focusInform
+function focusInform(e){
+    var parentCart = e.parentElement;
+    var image = parentCart.querySelector("img").src;
+    var name = parentCart.querySelector(".name").innerText;
+    var price = parentCart.querySelector(".price").innerText;
+    var listT = [
+        {
+            image: image,
+            name: name,
+            price: price
+
+        }
+    ]
+    localStorage.setItem("listT", JSON.stringify(listT));
+    window.location = "http://127.0.0.1:5500/focusInform.html";
+}
+
 // render all product on one page
 function updateProductAll(){
     let parentItem = document.getElementById("parentItem");
@@ -347,6 +425,10 @@ function getInformProduct(e){
 }
 // add product to cart
 function addProduct(image, name, price, amount){
+    if(User == null){
+        window.location = "http://127.0.0.1:5500/login.html";
+        return;
+    }
     var mark = 0;
     const productAddeds = document.querySelectorAll(".InterfaceCart table tr");
     productAddeds.forEach(product => {
@@ -433,8 +515,6 @@ function checkInputPrice(e){
     }
 }
 function Filter(priceF, priceT, typeName){
-    console.log(priceF, priceT, typeName);
-    console.log(listTmp);
     let parentItem = document.getElementById("parentItem");
     parentItem.innerHTML = '';
     document.getElementById("pageSales").classList.add("close");
@@ -490,6 +570,9 @@ function saveLocal(){
     var nameProduct, imageProduct, priceProduct, amountProduct;
     listProductCart = [];
     var listSaved = JSON.parse(localStorage.getItem("InformUser"));
+    if(User == null){
+        return;
+    }
     if(listSaved != null){
         listSaved.forEach(e => {
             if(e.nameuser != null)

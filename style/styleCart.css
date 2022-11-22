@@ -1,3 +1,9 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
 #headerCart{
     position: fixed;
     width: 100vw;
@@ -20,7 +26,7 @@
     align-items: center;
     justify-content: space-between;
 }
-#headerCart .inputBox input{
+.inputBox input{
     border: 1px solid #e8604c;
     border-radius: 10px;
     height: 50px;
@@ -49,7 +55,7 @@
     right: 0px;
     width: 500px;
     height: 100vh;
-    padding-bottom: 50px;
+    padding-bottom: 100px;
     background-color: rgb(234, 217, 217);
     overflow: scroll;
 }
@@ -97,8 +103,21 @@
 #headerCart .InterfaceCart .ti-trash{
     font-size: 30px;
 }
-
-
+#headerCart .InterfaceCart .footerCart{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 0px;
+    width: 500px;
+    height: 50px;
+    background-color: rgb(34, 32, 32);
+}
+#headerCart .InterfaceCart .footerCart a{
+    padding: 15px 140px;
+    text-decoration: none;
+    color: white;
+}
 /*  */
 /*  */
 #containerCart{
@@ -229,6 +248,7 @@
     font-weight: bold;
     padding-left: 10px;
 }
+
 
 #containerCart .support .filter .btnFilter{
     height: 30%;
@@ -386,3 +406,60 @@
     cursor: pointer;
     color: green;
 }
+
+@media screen and (max-width: 800px){
+    #headerCart .InterfaceCart{
+        width: 400px;
+    }
+    #headerCart .InterfaceCart .footerCart{
+        width: 400px;
+    }
+    #headerCart .InterfaceCart .footerCart a{
+        padding: 10px 50px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .logo{
+        display: none;
+    }
+    .inputBox input{
+        width: 250px;
+    }
+    #containerCart .listProduct .productItem{
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    #headerCart{
+        justify-content: left;
+        width: 100vh;
+    }
+    .logo{
+        display: none;
+    }
+    .inputBox{
+        margin-right: 30px;
+    }
+    .inputBox input{
+        width: 200px;
+    }
+    #containerCart .listProduct .productItem{
+        width: 70%;
+    }
+    #headerCart .InterfaceCart{
+        width: 300px;
+    }
+    #headerCart .InterfaceCart .ti-trash{
+        font-size: 15px;
+    }
+    #headerCart .InterfaceCart .footerCart{
+        width: 300px;
+    }
+    #headerCart .InterfaceCart .footerCart a{
+        padding: 10px 50px;
+    }
+
+}
+
